@@ -459,7 +459,7 @@ class ABF:
 
         # create objects for each channel stimulus
         self.stimulusByChannel = []
-        for channel in self.channelList:
+        for channel in range(8): ## extracting stimuli on all 8 adc channels
             self.stimulusByChannel.append(
                 pyabf.stimulus.Stimulus(self, channel))
 
